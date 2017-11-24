@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.HomePage">
+    <ContentPage.Content>
+        <StackLayout Padding="10,30,10,10" Spacing="10">
+            <Label Text="Crypto Currency Monitor"
+                   Font="20"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ActivityIndicator x:Name="waitActivityIndicator"/>
+            
+            <Button x:Name="convertButton"
+                    IsEnabled="True"
+                    Text="Actualizar Precio"
+                    BackgroundColor="Blue"
+                    TextColor="White"/>
+            <Label x:Name="priceLabel"
+                   Font="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Start"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
